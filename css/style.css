@@ -1,0 +1,15 @@
+.container .box-logo{
+    background-color: #e4e0da;
+}
+
+.box-logo img{
+    margin: 0;
+}
+
+.content{
+    background-color: #e4e0da;
+}
+
+.contact p, img{
+    margin: 20px 0;
+}
