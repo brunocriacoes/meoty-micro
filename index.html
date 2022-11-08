@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Meoty MicroAire</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700;900&display=swap" rel="stylesheet">
     <script src="./js/cdn-tailwind.js" defer></script>
-    <title>Meoty-Micro</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cor1: '#E4E0DA',
+                        cor2: '#0090D4',
+                        cor3: '#657762',
+                    },
+                    fontFamily: {
+                        font1: ['Montserrat'],
+                    }
+                }
+            }
+        }
+    </script>
 </head>
+
 <body>
     <div class="container">
         <div>
@@ -29,10 +49,12 @@
                                 <div class="flex justify-center">
                                     <div>
                                         <div class="flex justify-center">
-                                            <a href="https://web.whatsapp.com/" target="_blank"><img src="./img/watzapp.png" alt="" class=""></a>
+                                            <a href="https://web.whatsapp.com/" target="_blank"><img
+                                                    src="./img/watzapp.png" alt="" class=""></a>
                                         </div>
                                         <div class="flex justify-center">
-                                            <a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram.png" alt="" class="mb-0"></a>
+                                            <a href="https://www.instagram.com/" target="_blank"><img
+                                                    src="./img/instagram.png" alt="" class="mb-0"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -45,11 +67,23 @@
                 </div>
             </div>
         </div>
-        <div class="footer">
-            <div>
-                <img src="./img/background-footer.png" alt="" class="w-screen m-0">
-            </div>
-        </div>
+        
     </div>
+
+    <footer class="w-full bg-cor3">
+        <section>
+            <div>
+                <span>Moety</span>
+                <span>Copyright 2022</span>
+                <span>endereço Meoty</span>
+            </div>          
+            <picture>
+                <source srcset="./img/footer-md.png" media="(min-width: 480px)">
+                <source srcset="./img/footer-lg.png" media="(min-width: 760px)">
+                <img src="./img/footer.png" loading="lazy" alt="impressão digital">
+            </picture>
+        </section>
+    </footer>
 </body>
+
 </html>
