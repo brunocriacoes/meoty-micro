@@ -6,10 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meoty MicroAire</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700;900&display=swap" rel="stylesheet">
-    <script src="./js/cdn-tailwind.js" defer></script>
+    <script src="./js/cdn-tailwind.js"></script>
     <script>
         tailwind.config = {
             theme: {
@@ -28,62 +26,71 @@
     </script>
 </head>
 
-<body>
-    <div class="container">
-        <div>
-            <div class="md:flex md:justify-center">
-                <div class="flex justify-center box-logo py-4 w-full">
-                    <img src="./img/logo1.svg" alt="" class="mb-3">
-                </div>
-                <div class="flex justify-center bg-sky-500 w-full">
-                    <img src="./img/logo2.png" alt="">
-                </div>
+<body class="bg-cor1 font-font1">
+
+    <header>
+        <div class="grid grid-cols-1 md:grid-cols-2 content-center ">
+            <div class="h-[66px] lg:h-[112px] flex items-center justify-center">
+                <picture>
+                    <img class="mx-auto lg:h-[70px]" src="./img/meoty.svg" alt="meoty" loading="lazy">
+                </picture>
             </div>
-            <div class="md:flex md:flex-row-reverse">
-                <div class="content pb-10 w-full">
-                    <div class="">
-                        <div class="flex justify-center contact font-light">
-                            <div class="block text-center">
-                                <p>Contact</p>
-                                <p>Newsletter</p>
-                                <div class="flex justify-center">
-                                    <div>
-                                        <div class="flex justify-center">
-                                            <a href="https://web.whatsapp.com/" target="_blank"><img
-                                                    src="./img/watzapp.png" alt="" class=""></a>
-                                        </div>
-                                        <div class="flex justify-center">
-                                            <a href="https://www.instagram.com/" target="_blank"><img
-                                                    src="./img/instagram.png" alt="" class="mb-0"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-full">
-                    <img src="./img/image-product.png" alt="" class="w-screen m-0">
-                </div>
+            <div class="bg-cor2 h-[66px] lg:h-[112px] flex items-center justify-center">
+                <picture>
+                    <img class="mx-auto lg:h-[70px]" src="./img/microare.svg" alt="microare" loading="lazy">
+                </picture>
             </div>
         </div>
-        
-    </div>
+    </header>
 
-    <footer class="w-full bg-cor3">
+    <main>
+        <div class="grid grid-cols-1 md:grid-cols-2 content-center">
+            <section class="hidden md:block">
+                <picture>
+                    <source srcset="./img/shape-lg.png" media="(min-width:650px)">
+                    <source srcset="./img/shape-md.png" media="(min-width:465px)">
+                    <img class="w-full" src="./img/shape.png" loading="lazy" alt="impressão digital">
+                </picture>
+            </section>
+            <section class="flex items-center">
+                <div class="w-full text-center py-[26px]">
+                    <a class="block text-[18px] text-[24px] mb-[24px]" href="#" title="Contact">Contact</a>
+                    <a class="block text-[18px] text-[24px] mb-[24px]" href="#" title="Newsletter">Newsletter</a>
+                    <a class="block mb-[24px]" href="https://wa.me/5511972359909" title="WhatsApp">
+                        <img class="mx-auto" src="./img/whats.svg" alt="WhatsApp">
+                    </a>
+                    <a class="block mb-[24px]" href="#" title="Instagram">
+                        <img class="mx-auto" src="./img/insta.svg" alt="Instagram">
+                    </a>
+                </div>
+            </section>
+            <section class="md:hidden">
+                <picture>
+                    <source srcset="./img/shape-lg.png" media="(min-width:650px)">
+                    <source srcset="./img/shape-md.png" media="(min-width:465px)">
+                    <img class="w-full" src="./img/shape.png" loading="lazy" alt="impressão digital">
+                </picture>
+            </section>
+        </div>
+    </main>
+
+    <footer class="block w-full text-[8px] bg-cor3 pt-[31px] md:pt-[41px] lg:pt-[75px]">
         <section>
-            <div>
-                <span>Moety</span>
-                <span>Copyright 2022</span>
-                <span>endereço Meoty</span>
-            </div>          
-            <picture>
-                <source srcset="./img/footer-md.png" media="(min-width: 480px)">
-                <source srcset="./img/footer-lg.png" media="(min-width: 760px)">
-                <img src="./img/footer.png" loading="lazy" alt="impressão digital">
-            </picture>
+            <div class="text-cor1 text-center mb-[-100px]">
+                <span class="block">Moety</span>
+                <span class="block">Copyright 2022</span>
+                <span class="hidden md:block">endereço Meoty</span>
+            </div>
+            <div class="flex justify-end">
+                <picture>
+                    <source srcset="./img/footer-lg.png" media="(min-width:650px)">
+                    <source srcset="./img/footer-md.png" media="(min-width:465px)">
+                    <img src="./img/footer.png" loading="lazy" alt="impressão digital">
+                </picture>
+            </div>
         </section>
     </footer>
+
 </body>
 
 </html>
