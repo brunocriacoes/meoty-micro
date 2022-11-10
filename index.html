@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meoty MicroAire</title>
+    <link rel="stylesheet" href="./fonts/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700;900&display=swap" rel="stylesheet">
     <script src="./js/cdn-tailwind.js"></script>
     <script>
@@ -19,6 +20,10 @@
                     },
                     fontFamily: {
                         font1: ['Montserrat'],
+                        moderatthin: ['moderatthin'],
+                        moderatbold: ['moderatbold'],
+                        moderatregular: ['moderatregular'],
+                        agrandir: ['agrandir'],
                     }
                 }
             }
@@ -44,7 +49,7 @@
     </header>
 
     <main>
-        <div class="grid grid-cols-1 md:grid-cols-2 content-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 content-center font-moderatregular">
             <section class="hidden md:block">
                 <picture>
                     <source srcset="./img/shape-lg.png" media="(min-width:650px)">
@@ -74,12 +79,10 @@
         </div>
     </main>
 
-    <footer class="block w-full text-[8px] bg-cor3 pt-[31px] md:pt-[41px] lg:pt-[75px]">
+    <footer class="block w-full text-[12px] bg-cor3 pt-[31px] md:pt-[41px] lg:pt-[75px]">
         <section>
-            <div class="text-cor1 text-center mb-[-100px]">
-                <span class="block">Moety</span>
-                <span class="block">Copyright 2022</span>
-                <span class="hidden md:block">endereço Meoty</span>
+            <div class="text-cor1 text-center mb-[-100px] font-agrandir">
+                <span class="block">Moety - Copyright 2022</span>
             </div>
             <div class="flex justify-end">
                 <picture>

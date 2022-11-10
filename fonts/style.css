@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'moderatthin';
+    src: url('moderat_thin-webfont.woff2') format('woff2'),
+         url('moderat_thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'moderatbold';
+    src: url('moderat_bold-webfont.woff2') format('woff2'),
+         url('moderat_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'moderatregular';
+    src: url('moderat_regular-webfont.woff2') format('woff2'),
+         url('moderat_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'agrandir';
+    src: url('agrandir-variable-webfont.woff2') format('woff2'),
+         url('agrandir-variable-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
